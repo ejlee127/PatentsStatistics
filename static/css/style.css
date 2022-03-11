@@ -178,7 +178,23 @@ body {
     padding: 5px;
     background-color: rgba(240, 240, 240, 0.801);
   }
-  
+
+  #rankingTable table {
+    border: 1px solid;
+    width: 90%;
+    /* border-style: solid; */
+  }
+  #rankingTable th{
+    background-color: azure;
+    border: 1px solid;
+    text-align: center;
+    padding: 3px;
+  }
+  #rankingTable td {
+    border: 1px solid;
+    text-align: center;
+    padding: 3px;
+  }
   
   /* ---  hoverpopups type 1 ---- */
   /* copied from http://www.wickham43.net/tutorial.css */
