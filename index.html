@@ -36,49 +36,213 @@
         <div class="col-md-10">
           <div class="row">
             <div >
+              Recently, I came across the patent publications disclosed in World Intellectual Property Organization (WIPO) from 2000 to 2021.
+              This project looks into the number of publications by country, year, applicant and so on.
               <!-- <img class="wav-img" align="left" src="images/dog_bark_plot.png"> -->
             </div>
           </div>  
         </div>
         <div class="col-md-2">
-          <div>
-            <!-- <a href="dataprocessing.html" class="btn btn-primary btn-block" role="button">Data Processing</a> -->
-          </div>
         </div>
       </div>
-      <div class = "row">        
-        <div class="card card-big">
-          <h4 class="card-header"> Patents worldwide</h4>
-          <div class="card-body">
-            <p>
-              The following bar graphs show the top 20 countries of 2021 and 2000. 
-              The countries newly appeared in top 20 are China(Rank 1), India(Rank 14), Turkey(Rank 19) and Singapore(Rank 20).<br>
-              The countries not appeared in top 20 are 
-              Belgium(Rank 16 in 2000), Norway(Rank 17 in 2000), 
-              Russia(Rank 18 in 2000) and Spain(Rank 20 in 2000).
-            </p>
-            <p>
-              The countries with upgraded ranks are
-              South Korea(up 9), Italy(up 1), Israel (up 1), Austria(up 1).
-            </p>
-            <p class="card-text">
-              The number of patent publications in 2021 by country (top 20):
-            </p>
+      <div class = "row"> 
+        <div class="col=md-8">
+          <div class="card card-big">
+            <h4 class="card-header"> Patents worldwide</h4>
+            <div class="card-body">
+              <p>
+                The following bar graphs show the top 20 countries of 2021 and 2000. 
+                The countries newly appeared in top 20 are China(Rank 1), India(Rank 14), Turkey(Rank 19) and Singapore(Rank 20).<br>
+                The countries not appeared in top 20 are 
+                Belgium(Rank 16 in 2000), Norway(Rank 17 in 2000), 
+                Russia(Rank 18 in 2000) and Spain(Rank 20 in 2000).
+              </p>
+              <p>
+                The countries with upgraded ranks are
+                South Korea(up 9), Italy(up 1), Israel (up 1), Austria(up 1).
+              </p>
+              
+              <!-- TABLE -->
+              <div id="rankingTable">
+                <table>
+                  <thead>
+                    <tr style="text-align: right;">
+                      <th>country</th>
+                      <th>CN</th>
+                      <th>US</th>
+                      <th>JP</th>
+                      <th>KR</th>
+                      <th>DE</th>
+                      <th>FR</th>
+                      <th>GB</th>
+                      <th>CH</th>
+                      <th>SE</th>
+                      <th>NL</th>
+                      <th>IT</th>
+                      <th>CA</th>
+                      <th>IL</th>
+                      <th>IN</th>
+                      <th>FI</th>
+                      <th>AU</th>
+                      <th>DK</th>
+                      <th>AT</th>
+                      <th>TR</th>
+                      <th>SG</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>rank in 2000</th>
+                      <td>22</td>
+                      <td>1</td>
+                      <td>3</td>
+                      <td>13</td>
+                      <td>2</td>
+                      <td>5</td>
+                      <td>4</td>
+                      <td>8</td>
+                      <td>6</td>
+                      <td>7</td>
+                      <td>12</td>
+                      <td>9</td>
+                      <td>14</td>
+                      <td>30</td>
+                      <td>10</td>
+                      <td>11</td>
+                      <td>15</td>
+                      <td>19</td>
+                      <td>33</td>
+                      <td>25</td>
+                    </tr>
+                    <tr>
+                      <th>rank in 2021</th>
+                      <td style="background-color:salmon">1</td>
+                      <td>2</td>
+                      <td>3</td>
+                      <td style="background-color:lightpink">4</td>
+                      <td>5</td>
+                      <td>6</td>
+                      <td>7</td>
+                      <td>8</td>
+                      <td>9</td>
+                      <td>10</td>
+                      <td>11</td>
+                      <td>12</td>
+                      <td style="background-color:lightpink">13</td>
+                      <td style="background-color:salmon">14</td>
+                      <td>15</td>
+                      <td>16</td>
+                      <td>17</td>
+                      <td style="background-color:lightpink">18</td>
+                      <td style="background-color:salmon">19</td>
+                      <td style="background-color:salmon">20</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- END of TABLE -->
+
+              <p class="card-text">
+                <!-- The number of patent publications in 2021 by country (top 20): -->
+              </p>
+            </div>
+            <div class="card-img-bottom">
+              <!-- <canvas id="patentCount"></canvas> -->
+              <img src="images/top20_2021.png">
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                <!-- The number of patent publications in 2000 by country (top 20): -->
+              </p>
+              <!-- TABLE -->
+              <div id="rankingTable">                
+                <table>
+                  <thead>
+                    <tr style="text-align: right;">
+                      <th>country</th>
+                      <th>US</th>
+                      <th>DE</th>
+                      <th>JP</th>
+                      <th>GB</th>
+                      <th>FR</th>
+                      <th>SE</th>
+                      <th>NL</th>
+                      <th>CH</th>
+                      <th>CA</th>
+                      <th>FI</th>
+                      <th>AU</th>
+                      <th>IT</th>
+                      <th>KR</th>
+                      <th>IL</th>
+                      <th>DK</th>
+                      <th>BE</th>
+                      <th>NO</th>
+                      <th>RU</th>
+                      <th>AT</th>
+                      <th>ES</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>rank in 2000</th>
+                      <td>1</td>
+                      <td>2</td>
+                      <td>3</td>
+                      <td>4</td>
+                      <td>5</td>
+                      <td>6</td>
+                      <td>7</td>
+                      <td>8</td>
+                      <td>9</td>
+                      <td>10</td>
+                      <td>11</td>
+                      <td>12</td>
+                      <td>13</td>
+                      <td>14</td>
+                      <td>15</td>
+                      <td>16</td>
+                      <td>17</td>
+                      <td>18</td>
+                      <td>19</td>
+                      <td>20</td>
+                    </tr>
+                    <tr>
+                      <th>rank in 2021</th>
+                      <td>2</td>
+                      <td>5</td>
+                      <td>3</td>
+                      <td>7</td>
+                      <td>6</td>
+                      <td>9</td>
+                      <td>10</td>
+                      <td>8</td>
+                      <td>12</td>
+                      <td>15</td>
+                      <td>16</td>
+                      <td>11</td>
+                      <td>4</td>
+                      <td>13</td>
+                      <td>17</td>
+                      <td style="background-color:lightgrey">22</td>
+                      <td style="background-color:lightgrey">26</td>
+                      <td style="background-color:lightgrey">23</td>
+                      <td>18</td>
+                      <td style="background-color:lightgrey">21</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- ENE TABLE -->
+            </div>
+            <div class="card-img-bottom">
+              <!-- <canvas id="patentCount"></canvas> -->
+              <img src="images/top20_2000.png">
+            </div>
           </div>
-          <div class="card-img-bottom">
-            <!-- <canvas id="patentCount"></canvas> -->
-            <img src="images/top20_2021.png">
-          </div>
-          <div class="card-body">
-            <p class="card-text">
-              The number of patent publications in 2000 by country (top 20):
-            </p>
-          </div>
-          <div class="card-img-bottom">
-            <!-- <canvas id="patentCount"></canvas> -->
-            <img src="images/top20_2000.png">
-          </div>
-        </div>
+        </div>               
+      </div>
+
+      <div class="row">
         <div class="card card-big">
           <h4 class="card-header"> Timelines of Top 10 countries of 2000 and 2021 </h4>
           <div class="card-body">
@@ -101,6 +265,7 @@
           </div>
         </div>
       </div>
+        
 
       <!-- <div class="row"> -->
         <!-- <div class="col-md-11"> -->
